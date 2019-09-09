@@ -96,7 +96,9 @@
                 table,tr,td{border: solid 1px black}
             </style>
             <!-- rowspan 행 확장, colspan 열 확장 -->
-            <table>
+            <table summary="학과별 학번, 이름, 전화번호 정보">
+            <!-- thead, tbody, tfoot -->
+                <thead>
                 <tr>
                     <tn>제목1</tn>
                     <tn>제목2</tn>
@@ -104,6 +106,7 @@
                     <tn>제목4</tn>
                     <tn>제목5</tn>
                 </tr>
+                </thead>
                 <tr>
                     <td colspan="2">1</td>
                     <!-- 가로로 2칸 차지하기 -->

@@ -79,6 +79,12 @@
             /* 선택자 그룹화 , 쉼표(,) */
             div,ul,li{
                 color: blueviolet;
+                /* 16진수, 0~9-A~F */
+                color: #000; /*3자리 컬러코드 #rgb */
+                color: #000000; /*6자리 컬러코드 #rrggbb */
+                color: rgb(0,0,255); /* 0~255 */
+                color: rgb(0%,0%,100%); /* 0%~100% */
+
             }
         </style>
         <div style="color: blue;">
@@ -89,6 +95,21 @@
             <li>리스트3</li>
             <li>리스트4</li>
         </ul>
+        </div>
+
+        <style>
+            .position_test{
+                /* static 정적인(기본) */
+                position: static
+                /* absolute 절대적인 */
+                /* top, left, right, bottom 위치 조종 가능 */
+                position: absolute;
+                top: 100px;
+                left: 100px;
+            }
+        </style>
+        <div class="position_test">
+            position_test
         </div>
 
 

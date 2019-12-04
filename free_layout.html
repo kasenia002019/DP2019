@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>free_layout</title>
+        <meta charset="utf-8"/>
+        <style>
+        .clear{
+            clear:both; height:0px; overflow:hidden;
+        }
+        body {
+            background-color: #fff9d5;
+            font-family: "Malgun Gothic", dotum, sans-serif;
+            font-size: 12px;
+            margin: 0;
+        }
+        header{
+            height: 100px;
+            position: fixed;
+            padding-top: 1px;
+            width: 100%;
+            top: 0;
+        }
+        .wrapper{
+            background-color: #eed12a;
+            width: 1500px;
+            height: 4100px;
+            margin: 120px auto;
+            padding-top: 40px;
+        }
+        aside{
+            width: 180px;
+            float: right;
+        }
+        section{
+            width: 1200px;
+            float: left;
+        }
+        footer{
+            clear: both;
+            padding: 100px 0;
+        }
+        header{
+            background-color: #ffea73;
+        }
+        header h1{
+            text-align: center;
+        }
+        header ul{
+            margin: 0 0 0 -200px;
+            padding: 0;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            list-style-type: none;
+        }
+        header ul li{
+            float: left;
+            padding: 4px 15px;
+            background-color: #caae10;
+        }
+        header ul li:hover{
+            background-color: #fff6c5;
+            cursor: pointer;
+        }
+        aside{
+            background-color: #caae10;
+            /*border-radius: 10px;*/
+            line-height: 30px;
+            box-shadow: 0 1px 3px rgb(0, 0, 200, 0.2);
+        }
+        section{
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 200, 0.2);
+        }
+        section .box{
+            padding-top: 0;
+            line-height: 20px;
+        }
+        section .box > .inner{
+            margin: 50px;
+        }
+        footer{
+            text-align: center;
+        }
+        a:link{
+            color: #666666;
+        }
+        footer ul{
+            padding: 0px;
+        }
+        footer ul>li{
+            list-style: none; 
+            float: left;
+        }
+        #footer2{ float: right; }
+        #footer2>li{
+            margin-left: 5px;
+            margin-right: 10px;
+           
+        }
+        #foot_left{
+            float:left;
+            width: calc(100% - 125px);
+        }
+        table{
+            text-align: center;
+        }
+        </style>
+        
+    </head>
+
+    <body>
+            <header>
+                   
+                    <a href="index.html">index.html</a>
+                    <a href="training.html">HTML연습</a>
+                    <a href="html_part1.html">html_part1.html</a>
+                    <a href="html5.html">html5.html</a>
+                    <a href="css.html">css.html</a>
+                    <a href="layout1.html">layout1.html</a>
+                    <a href="layout2.html">layout2.html</a>
+                    <a href="layout3.html">layout3.html</a>
+                    <a href="responsive.html">responsive.html</a>
+
+                    <h1>대한민국</h1>
+
+                    <ul>
+                        <li>개요</li>
+                        <li>수도</li>
+                        <li>애국가</li>
+                        <li>여행</li>
+                        <li>전통</li>
+                        <li>경제</li>
+                        <li>인물</li>
+                    </ul>
+
+                </header>
+                
+                <div class="wrapper">
+
+                    <aside>
+                        <ul>
+                            <li><a href="#">태극기 더보기</a></li>
+                            <li><a href="#">한국어 더보기</a></li>
+                            <li><a href="#">면적 더보기</a></li>
+                            <li><a href="#">인구 더보기</a></li>
+                            <li><a href="#">GDP 더보기</a></li>
+                            <li><a href="#">날씨 더보기</a></li>
+                            <li><a href="#">역사 더보기</a></li>
+                        </ul>
+                    </aside>
+
+                    <section>
+                        <div class="box">
+                            <div class="inner">
+                                <h2>대한민국</h2>
+                                <p>Republic of Korea</p> <br>  <br>
+                                <img src="images/태극기.jpg"/>
+                                <h3>국기</h3>
+                                <p>태극기</p>
+                                <h3>국가</h3>
+                                <p>애국가</p>
+                                <h3>언어</h3>
+                                <p>한국어</p>  <br>
+                                <img src="images/대한민국.png"/>
+                                <h3>면적</h3>
+                                <p>1,003만 3,948.62㏊ 세계107위 (2016 국토교통부, FAO 기준)</p>
+                                <h3>인구</h3>
+                                <p>5,170만 9,098명 세계28위 (2019 통계청, UN, 대만통계청 기준)</p>
+                                <h3>GDP</h3>
+                                <p>1조 7,208억 9천만 달러 세계10위 (2018 한국은행, The World Bank, 대만통계청 기준)</p>  <br>
+                                <img src="images/평균기온 및 평균 강수량의 변화.jpg"/>
+                                <img src="images/1910년 대비 2000년대 우리나라 계절 길이의 변화 계절 구분 기준.jpg"/>
+                               
+                                <!-- table 도표, tr : table row 테이블행, td : table data 칸 -->
+                                <!-- table, tr, td -->
+
+                                <style>
+                                table,tr,td{border: solid 1px black}
+                                </style>
+
+                                <!-- rowspan 행 확장, colspan 열 확장 -->
+                                
+                                <table summary="학과별 학번, 이름, 전화번호 정보">
+
+                                <caption>계절 구분 기준</caption>
+
+                                <!-- thead, tbody, tfoot -->
+
+                                <tr>
+                                <td>계절</td>
+                                <td>일평균 기온</td>
+                                <td>일 최고 기온</td>
+                                <td>일평균 기온</td>
+                                </tr>
+
+                                <tr>
+                                <td>봄</td>
+                                <td>5c 이상</td>
+                                <td></td>
+                                <td>0c 이상</td>
+                                </tr>
+
+                               <tr>
+                               <td>여름</td>
+                               <td>20c 이상</td>
+                               <td>25c 이상</td>
+                               <td></td>
+                               </tr>
+
+                                <tr>
+                                <td>가을</td>
+                                <td>20c 이하</td>
+                                <td>25c 이하</td>
+                                <td></td>
+                                </tr>
+
+                                <tr>
+                                <td>겨울</td>
+                                <td>5c 이하</td>
+                                <td></td>
+                                <td>0c 이하</td>
+                                </tr>
+
+                               </table>
+
+                               <br>
+                               
+                                <h3>기후</h3>
+                                <p>
+                                한국은 유라시아대륙의 동단에 돌출한 반도로, 북위 33∼43°에 걸쳐 남북으로 뻗어 있으며, 반도를 따라 척량부를 <br>
+                                이루는 태백산맥이 위치하고 있어 국토가 작은 데 비해 동서남북의 기후가 다양하다. 또 중위도의 온대에 위치하여 <br>
+                                지역적인 다양성과 함께 계절적 변화에도 다채로운 추이를 볼 수 있다. 기후의 특색은 기온의 측면에서는 대륙성기후로 <br>
+                                규정할 수 있고 강수나 바람의 측면에서는 몬순기후로 규정할 수 있다. 춥고 건조한 대륙성 기단인 시베리아 기단에 <br>
+                                영향을 받는 겨울철에는 비가 적고 매우 건조하다. 이에 반해 여름철은 6월 말부터 장마전선의 영향으로 집중호우가 <br>
+                                내려 많은 피해가 일어나기도 한다. 이러한 장마 시기가 지난 7~8월에는 북태평양 기단의 영향으로 고온다습한 기후를 보인다. <br>
+                                뚜렷한 성격의 겨울과 여름에 비해 봄과 가을은 짧지만 맑고 쾌청한 날씨가 연속되어 나타난다. <br>
+                                </p> <br>
+                                <img src="images/숭례문.jpg"/>
+                                <h3>역사</h3>
+                                <p>
+                                한국사에서 시대구분은 예로부터 큰 관심을 끌어왔다. 신라의 역사를 상대·중대·하대, 또는 상고·중고·하고로 구분한 것은 이미 <br>
+                                삼국사기와 삼국유사에서 찾아볼 수 있다. 그러나 대체로 왕조 중심의 구분법이 줄곧 관용화되어왔고, 20세기 초에 이르기까지도 <br>
+                                변함이 없었다. 그러다가 서양의 근대적 역사 연구방법을 받아들이면서부터 시대구분에 여러 가지 새로운 시도가 행해지기 시작하였다. <br>
+                                시대구분은 바로 역사를 이해하는 척도이자, 역사관의 반영이다. 지금까지 제시된 시대구분을 공통성을 기준으로 하여 보면 몇 개의 유형으로 나뉜다. <br> <br>
+                                첫째는 시간의 원근에 의한 시대구분인데, 최남선·이병도·진단학회에서 밝힌 견해이다. 이들 모두는 현재를 기점으로 하여 <br>
+                                시간의 원근을 기준으로 삼아 시대를 구분한 것이다. 여기에는 서양사에서 흔히 사용되고 있는 고대·중세·근대의 3분법이 영향을 미치고 있다. <br> <br>
+                                둘째는 사회 발전의 단계를 기준으로 시대를 구분한다. 이는 백남운·이청원·손진태, 그리고 한우근·김철준 공저에서 제시된 시대구분이다. <br>
+                                이들은 대체로 원시사회·고대사회·봉건사회·근대사회라고 하는 사회 발전의 단계를 염두에 두고 있다. 다만 손진태의 조선민족사개론에서는 <br>
+                                국가의 발전이란 측면에서 독자적 견해를 보여주고 있다. <br> <br>
+                                셋째는 민족의 성장과정을 기준으로 한 구분법으로서 손진태·이인영의 주장이 이에 속한다. 그러나 이 구분법은 실제 내용 서술에서는 적용되지 않았다. <br> <br>
+                                넷째는 이인영·이기백의 ‘개설서’에 제시된 시대구분으로서, 주제 중심 또는 지배세력의 변화에 초점을 맞추어서 역사를 본 것이다. <br>
+                                그러나 이 경우에는 시대구분의 의미가 적다. <br> <br>
+                                끝으로 최근에 시도되고 있는 방법은 사회 발전의 측면을 강조하면서 역사의 이해를 구조적으로 접근하려 하고 있다. 여러 학자들의 견해가 대체로 집약된, <br>
+                                한국사연구회의 한국사연구입문과 교육부에서 만든 고등학교 교과서에 제시된 시대구분이 여기에 해당된다. 이 경우에는 서양의 3분법과도 맥이 통한다.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <footer>
+                        <div id="foot_left">
+                            <p>제작자: 명지전문대학 커뮤니케이션디자인과 2019221021 범예린 <br>
+                               제작 계기: 디지털 퍼블리싱 디자인 2 기말평가</p>
+                            <p>제작 일시: 2019.11.18 ~ 12.01</p>
+                        </div>
+                        <ul id="footer2">
+                            <li><img src="images/layout3_icon1.png"></li>
+                            <li><img src="images/layout3_icon2.png"></li>
+                            <li><img src="images/layout3_icon3.png"></li>
+                            <li><img src="images/layout3_icon4.png"></li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="clear"></div>
+                    </footer>
+                </div>
+    </body>
+</html>
